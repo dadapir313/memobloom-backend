@@ -1,0 +1,26 @@
+{
+  "name": "notes-app-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "cors": "^2.8.5",
+    "device-detector-js": "^3.0.3",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "form-data": "^4.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "mailgun.js": "^12.1.1",
+    "mongoose": "^8.14.2",
+    "nodemailer": "^7.0.5",
+    "nodemon": "^3.1.10",
+    "resend": "^6.2.0"
+  }
+}

@@ -30,6 +30,10 @@ app.get("/", (req, res) => {
   res.json({ data: "Hello MemoBloom" });
 });
 
+app.get("/api/health", (req, res) => {
+  res.status(200).json({ status: "ok", message: "Server is healthy" });
+});
+
 // creating an resend instance(not using it since it requires the active domain)
 
 const resend = process.env.RESEND_API ? new Resend(process.env.RESEND_API) : null;

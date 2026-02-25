@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 
 // creating an resend instance(not using it since it requires the active domain)
 
-const resend = new Resend(process.env.RESEND_API);
+const resend = process.env.RESEND_API ? new Resend(process.env.RESEND_API) : null;
 
 
 // Initialize Mailgun(not using now: some form of API error)
